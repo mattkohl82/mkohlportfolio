@@ -120,10 +120,45 @@ header nav ul li a:hover {
     padding-bottom: 20px;
     text-align: center;
     margin: 50px;
-   
+}
+
+.work {
+    display: flex;
+}
+
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 100% 100% 100% 100%;
+    width: 90%;
+    grid-gap: 50px;
 
 }
-  
+
+.grid-item {
+    border: 10px solid var(--secondary-color);
+    border-radius: 25px;
+    margin-bottom: 200px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    font-size: 25px;
+    color: var(--main-color);
+}
+
+
+
+
+
+
+
+
   
 footer {
     background: linear-gradient(to right, var(--main-color), var(--secondary-color));
