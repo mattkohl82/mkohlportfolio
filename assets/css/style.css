@@ -1,0 +1,138 @@
+:root {
+    --main-color: #179c17;
+    --secondary-color: #e77517;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(to right, var(--main-color), var(--secondary-color));
+    padding: 20px 35 px;
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 9999;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    text-shadow: 0 0 10px rgba(201, 194, 194, 0.5);
+    
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: bolder;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(202, 190, 190, 0.5);
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background: var(--main-color);
+    color: var(--secondary-color);
+    border-radius: 7px;
+    text-shadow: none;
+}
+
+
+
+
+.hero-img {
+    background-image: url("./images/background.jpg"); 
+    background-color: #cccccc; 
+    height: 500px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+
+}
+
+.hero-img .hero2 {
+    background-image: url(./images/me.jpg);
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+    margin: auto;
+    opacity: .9;
+    background-size: 550px 550px;
+}
+
+.aboutme {
+    display: inline-flex;
+    
+}
+
+.aboutmetitle {
+    font-size: 100px;
+    background: -webkit-linear-gradient( var(--main-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--secondary-color);
+    border-bottom: 3px solid;
+    display: inline-block;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 50px;
+   
+
+}
+
+.aboutmeinfo {
+    font-size: 30px;
+    padding: 50px;
+    margin: 25px 25px;
+    text-align: center;
+    color: var(--main-color);
+}
+
+
+.worktitle {
+    font-size: 100px;
+    background: -webkit-linear-gradient( var(--main-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--secondary-color);
+    border-bottom: 3px solid;
+    display: inline-block;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 50px;
+   
+
+}
+  
+  
+footer {
+    background: linear-gradient(to right, var(--main-color), var(--secondary-color));
+}
+
+footer p {
+    font-size: 45px;
+}
+
+footer a {
+    text-decoration: none;
+}
