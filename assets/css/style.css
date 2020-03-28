@@ -1,6 +1,6 @@
 :root {
-    --main-color: #179c17;
-    --secondary-color: #e77517;
+    --main-color: #1ec508;
+    --secondary-color: #db7032;
 
 }
 
@@ -10,8 +10,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 header {
-    background: linear-gradient(to right, var(--main-color), var(--secondary-color));
     padding: 20px 35 px;
     display: flex;
     position: -webkit-sticky;
@@ -22,13 +25,23 @@ header {
     z-index: 9999;
     text-decoration: none;
     justify-content: space-between;
+    background-image: url("./images/background.jpg");
+    background-size: cover;  
+    background-position: center;
+    background-position: 80%;
+    height: 5%;
 }
 
 header h1 a {
     text-decoration: none;
     color: var(--secondary-color);
-    text-shadow: 0 0 10px rgba(201, 194, 194, 0.5);
-    
+    text-shadow: 0 0 10px rgba(201, 194, 194, 0.8);
+}
+
+header h1 a:hover {
+    color: var(--main-color);
+    border-radius: 7px;
+    text-shadow: none;
 }
 
 header nav ul {
@@ -48,38 +61,30 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: var(--main-color);
     color: var(--secondary-color);
     border-radius: 7px;
     text-shadow: none;
 }
 
-
-
-
-.hero-img {
-    background-image: url("./images/background.jpg"); 
-    background-color: #cccccc; 
-    height: 500px; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-
+.hero {
+    background-image: url("./images/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 70%;
+    align-items: initial;
 }
 
-.hero-img .hero2 {
-    background-image: url(./images/me.jpg);
+.hero-me img {
+    max-width: 40%;
+    max-height: 40%;
+    margin-left: 75%;
+    margin-top: 5%;
+    opacity: 0.8;
     border-radius: 20px;
-    width: 50%;
-    height: 50%;
-    background-position: right;
-    background-repeat: no-repeat;
-    display: ;
-    margin: auto;
-    opacity: .9;
-    background-size: 550px 550px;
-    justify-content: right;
-    align-items: baseline;
 }
 
 .aboutme {
@@ -153,8 +158,13 @@ header nav ul li a:hover {
     display: flex;
     font-size: 25px;
     font-weight: bold;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    
     color: white;
+}
+
+.grid-container a:hover {
+    color: black;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
 }
  
 .item1 {
@@ -188,8 +198,13 @@ header nav ul li a:hover {
    
 }
 
+.resume {
+    height: 50%;
+    display: flex;
+}
+
 .resumetitle {
-    font-size: 100px;
+    font-size: 75px;
     background: -webkit-linear-gradient( var(--main-color), var(--secondary-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -201,23 +216,47 @@ header nav ul li a:hover {
     margin: 50px;
 }
 
+.resume-info {
+    font-size: 25px;
+    display: flex;
+    color: green;
+}
+
+.resume-info h2 {
+    margin:50px;
+}
 
 
 
-
-
-
-
-
-  
 footer {
     background: linear-gradient(to right, var(--main-color), var(--secondary-color));
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+footer div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
 }
 
 footer p {
-    font-size: 45px;
+    font-size: 75px;
 }
 
 footer a {
     text-decoration: none;
+    font-size: 25px;
+    padding: 25px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
+
+footer a:hover {
+    color: blue;
+}
+)
