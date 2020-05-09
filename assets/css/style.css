@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 html, body {
@@ -71,10 +72,8 @@ header nav ul li a:hover {
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
-    display: flex;
+    display: grid;
     justify-content: center;
-    flex-wrap: wrap;
-    height: 70%;
     align-items: initial;
 }
 
@@ -138,65 +137,67 @@ header nav ul li a:hover {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    grid-template-rows: 100% 100% 100% 100%;
-    width: 90%;
-    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 150px;
+    grid-column-gap: 100px;
+    grid-row-gap: 25px;
+    width: 75%;
+}
 
+.grid-container a {
+    text-decoration: none;
+}
+
+
+
+.grid-container h3:hover {
+    color: black;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+    text-decoration: none;
 }
 
 .grid-item {
-    border: 10px solid var(--main-color);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 25px;
-    margin-bottom: 200px;
-    margin-left: 40px;
     display: flex;
+    border: 10px solid var(--secondary-color);
     align-items: center;
     justify-content: center;
-    text-align: center;
-    display: flex;
-    font-size: 25px;
-    font-weight: bold;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
-    color: white;
+    text-decoration: none;
+    object-fit: fill;
+
 }
 
-.grid-container a:hover {
-    color: black;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+.grid-item h3{
+    color: var(--main-color);
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.9);
+    font-size: 200%;
 }
+
+
  
 .item1 {
-    background-image: url(./images/runbuddy.jpg);
-    background-size: 215px;
-
+    background-image: url("./images/runbuddy.jpg");
+    
 }
 
-
 .item2 {
-    background-image: url(./images/javascript.jpg);
-    background-size: 205px;
+    background-image: url("./images/javascript.jpg");
+    
 }
 
 .item3 {
-    background-image: url(./images/web.jpg);
-    background-position: center;
+    background-image: url("./images/web.jpg");
 }
 
 .item4 {
-    background-image: url(./images/3rdparty.jpg);
-    background-position: center;
-    background-size: 200px;
+    background-image: url("./images/3rdparty.jpg");
+}
+
+.item5 {
+    background-image: url("./images/project1.jpg");
 }
 
 
 
-.grid-item a {
-    text-decoration: none;
-    color: white;
-   
-}
 
 .resume {
     height: 50%;
