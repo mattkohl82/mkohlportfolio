@@ -16,7 +16,7 @@ html, body {
 }
 
 header {
-    padding: 20px 35 px;
+    padding: 20px 35px;
     display: flex;
     position: -webkit-sticky;
     position: sticky;
@@ -142,6 +142,7 @@ header nav ul li a:hover {
     grid-column-gap: 100px;
     grid-row-gap: 25px;
     width: 75%;
+    
 }
 
 .grid-container a {
@@ -176,24 +177,33 @@ header nav ul li a:hover {
  
 .item1 {
     background-image: url("./images/runbuddy.jpg");
+    background-size: cover;
+
     
 }
 
 .item2 {
     background-image: url("./images/javascript.jpg");
-    
+    background-size: cover;
 }
 
 .item3 {
     background-image: url("./images/web.jpg");
+    background-size: cover;
 }
 
 .item4 {
     background-image: url("./images/3rdparty.jpg");
+    background-size: cover;
 }
 
 .item5 {
     background-image: url("./images/project1.jpg");
+    background-size: cover;
+}
+.item6 {
+    background-image: url("./images/titlepage.jpg");
+    background-size: cover;
 }
 
 
