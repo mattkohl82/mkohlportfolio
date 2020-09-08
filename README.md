@@ -1,13 +1,33 @@
-Matthew Kohl Portfolio
+<h1 align="center">Matthew Kohl Portfolio</h1>
 
-This is my personal Portfolio.
+<p align="center">
+    <img src="https://img.shields.io/badge/Html-brightgreen"/>
+    <img src="https://img.shields.io/badge/CSS-red"/>
+</p>
 
-Working Portfolio Page
+<p align="center">
+    <img src="./assets/css/images/main.jpg" alt="main"/>
+</p>
 
-https://mattkohl82.github.io/mkohlportfolio/
 
-Github repository
+## Table of Contents
+- [Description](#description)
+- [Github](#github)
+- [Deployed Site](#Deployed-Site)
+- [Questions](#questions)
 
-https://github.com/mattkohl82/mkohlportfolio
+## Description
+This is my original portfolio site.
 
-Tried to add screenshots here and I cant seem to find out how. Searched google and cant seem to find a good answer.
+
+## Github
+Below is a link to the GitHub repository   
+[Github Repo](https://github.com/mattkohl82/mkohlportfolio)    
+
+## Deployed Site
+[Deployed Site](https://mattkohl82.github.io/mkohlportfolio/)  
+
+## Questions
+### [Mattkohl82 for GitHub](https://github.com/Mattkohl82)  
+### mattkohl82@gmail.com for ✉️ email 
+
